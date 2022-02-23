@@ -1,0 +1,34 @@
+@import '@styles/index.scss';
+
+.header-user {
+  padding: 0 vw(35);
+  @include flex(space-between);
+  img {
+    margin-right: vw(15);
+    width: vw(20);
+    height: vw(20);
+  }
+  span {
+    @include font(vw(13), 700);
+    color: $text-blue;
+    margin-right: 15px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    width: vw(240);
+  }
+  &__btn {
+    @include font(vw(13), 400);
+    padding: vw(5) vw(7);
+    background: $bg-purple;
+    border: none;
+    color: #fff;
+    border-radius: vw(20);
+    cursor: pointer;
+  }
+  svg {
+    width: vw(20);
+    height: vw(20);
+  }
+}
